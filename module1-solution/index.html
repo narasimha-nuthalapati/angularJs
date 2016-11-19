@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app="myFirstApp">
+<head>
+    <meta charset="utf-8">
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+	<title>AngularJS Solution 1</title>
+</head>
+<body>
+
+<h1> AngularJS Solution 1</h1>
+
+<div data-ng-controller="MyFirstController">
+	Enter Menu items (comma seperated):
+	<input type="text" data-ng-model="menuItems"><br>
+	<!--myStyle is used to display message color dynamically (Red/Green) -->
+	<span data-ng-style="myStyle"> {{message}}</span><br>
+	<button ng-click="updateMessage()">Check If Too Much</button>
+</div>
+
+</body>
+</html>
